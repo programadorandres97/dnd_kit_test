@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { DndContext } from '@dnd-kit/core';
 import { SortableContext, arrayMove, verticalListSortingStrategy } from '@dnd-kit/sortable';
-import Componente1 from './Componente1'; // Importa Componente1
-import Componente2 from './Componente2'; // Importa Componente2
-import SortableContainerItem from './SortableContainerItem'; // Importa el nuevo componente SortableContainerItem
+import Componente1 from '../components_page/Componente1'; // Importa Componente1
+import Componente2 from '../components_page/Componente2'; // Importa Componente2
+import SortableContainerItem from '../action/SortableContainerItem'; // Importa el nuevo componente SortableContainerItem
 
 function Contenedor() {
   const [components, setComponents] = useState(['Componente1', 'Componente2']);

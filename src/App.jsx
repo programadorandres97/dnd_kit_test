@@ -1,6 +1,6 @@
 import React from 'react';
-import Sidebar from './components/Sidebar'; // Importa el componente Sidebar
-import Contenedor from './components/Contenedor'; // Importa el componente Contenedor
+import Sidebar from './components/layout/Sidebar'; // Importa el componente Sidebar
+import Contenedor from './components/layout/Contenedor'; // Importa el componente Contenedor
 
 function App() {
   return (

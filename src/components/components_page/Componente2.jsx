@@ -5,7 +5,7 @@ import {
   horizontalListSortingStrategy,
   arrayMove
 } from '@dnd-kit/sortable';
-import SortableItem from './SortableItem'; // Reutiliza el componente SortableItem
+import SortableItem from '../action/SortableItem'; // Reutiliza el componente SortableItem
 
 function Componente2() {
   const [items, setItems] = useState(['Item 1', 'Item 2', 'Item 3']);

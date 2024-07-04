@@ -15,7 +15,8 @@ function Sidebar({ addItem }) {
   return (
     <div style={style}>
       <h2>Sidebar</h2>
-      <button onClick={addItem} style={{ padding: '10px', marginTop: '20px' }}>Add Item</button>
+      <button onClick={() => addItem('Componente1')} style={{ padding: '10px', marginTop: '20px' }}>Add Componente 1</button>
+      <button onClick={() => addItem('Componente2')} style={{ padding: '10px', marginTop: '20px' }}>Add Componente 2</button>
     </div>
   );
 }

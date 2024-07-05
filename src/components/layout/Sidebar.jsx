@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'primereact/button';
 
 function Sidebar({ addItem }) {
   const style = {
@@ -15,8 +16,12 @@ function Sidebar({ addItem }) {
   return (
     <div style={style}>
       <h2>Sidebar</h2>
-      <button onClick={() => addItem('Componente1')} style={{ padding: '10px', marginTop: '20px' }}>Add Componente 1</button>
-      <button onClick={() => addItem('Componente2')} style={{ padding: '10px', marginTop: '20px' }}>Add Componente 2</button>
+      <button onClick={() => addItem('Componente1')} className='p-2 border border-green-600 hover:bg-white hover:text-black mt-5'>Add Componente 1</button>
+      <button onClick={() => addItem('Componente2')} className='p-2 border border-blue-600 hover:bg-white hover:text-black mt-5'>Add Componente 2</button>
+      <button onClick={() => addItem('Componente2')} className='p-2 border border-red-600 hover:bg-white hover:text-black mt-5'>Add Componente 2</button>
+
+      {/* componente de prime react */}
+      <Button className='p-2 rounded border border-blue-400 hover:bg-white hover:text-black mt-5' label="Check" icon="pi pi-check" />
     </div>
   );
 }
